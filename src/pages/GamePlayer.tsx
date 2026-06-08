@@ -3,6 +3,7 @@ import { ArrowLeft, RefreshCw, Maximize2 } from "lucide-react";
 import * as Icons from "lucide-react";
 import { useState } from "react";
 import { GAMES } from "../data/games";
+import { SEO } from "../components/ui/SEO";
 
 export function GamePlayer() {
   const { gameId } = useParams<{ gameId: string }>();
@@ -29,12 +30,12 @@ export function GamePlayer() {
 
   if (!game) {
     return (
-      <div className="text-center py-20 bg-white rounded-3xl border border-stone-200 max-w-2xl mx-auto">
-        <h1 className="text-3xl font-bold text-stone-800 mb-4">Game Not Found</h1>
-        <p className="text-stone-500 mb-8">The game you are looking for doesn't exist.</p>
+      <div className="text-center py-20 bg-white dark:bg-stone-900 rounded-3xl border border-stone-200 dark:border-stone-800 max-w-2xl mx-auto transition-colors">
+        <h1 className="text-3xl font-bold text-stone-800 dark:text-stone-100 mb-4">Game Not Found</h1>
+        <p className="text-stone-500 dark:text-stone-400 mb-8">The game you are looking for doesn't exist.</p>
         <button 
           onClick={() => navigate('/games')} 
-          className="inline-flex items-center bg-emerald-100 text-emerald-800 px-6 py-3 rounded-full font-bold hover:bg-emerald-200 transition-colors"
+          className="inline-flex items-center bg-emerald-100 dark:bg-emerald-900/50 text-emerald-800 dark:text-emerald-200 px-6 py-3 rounded-full font-bold hover:bg-emerald-200 dark:hover:bg-emerald-800/60 transition-colors"
         >
           <ArrowLeft size={20} className="mr-2" /> Return to Games
         </button>
@@ -47,29 +48,30 @@ export function GamePlayer() {
 
   return (
     <div className="max-w-4xl mx-auto flex flex-col h-[75vh] min-h-[500px]">
-      <div className="flex items-center justify-between mb-4 bg-white p-4 rounded-2xl border border-stone-200 shadow-sm shrink-0">
+      <SEO title={game.title} description={game.description} />
+      <div className="flex items-center justify-between mb-4 bg-white dark:bg-stone-900 p-4 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-sm shrink-0 transition-colors">
         <div className="flex items-center">
           <button 
             onClick={() => navigate(-1)} 
-            className="p-2 mr-3 text-stone-400 hover:text-stone-700 hover:bg-stone-100 rounded-full transition-colors"
+            className="p-2 mr-3 text-stone-400 dark:text-stone-500 hover:text-stone-700 dark:hover:text-stone-300 hover:bg-stone-100 dark:hover:bg-stone-800 rounded-full transition-colors"
             aria-label="Go back"
           >
             <ArrowLeft size={20} />
           </button>
           <div>
-            <h1 className="font-bold text-lg text-stone-800 leading-tight">{game.title}</h1>
-            <span className="text-sm text-stone-500 font-medium">{game.category} • {game.playTimeEstimate}</span>
+            <h1 className="font-bold text-lg text-stone-800 dark:text-stone-100 leading-tight">{game.title}</h1>
+            <span className="text-sm text-stone-500 dark:text-stone-400 font-medium">{game.category} • {game.playTimeEstimate}</span>
           </div>
         </div>
         <div className="flex items-center space-x-2">
           <button 
-            className="p-2 text-stone-400 hover:text-emerald-600 hover:bg-emerald-50 rounded-full transition-colors"
+            className="p-2 text-stone-400 dark:text-stone-500 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 rounded-full transition-colors"
             title="Restart Game"
           >
             <RefreshCw size={20} />
           </button>
           <button 
-            className="p-2 text-stone-400 hover:text-emerald-600 hover:bg-emerald-50 rounded-full transition-colors"
+            className="p-2 text-stone-400 dark:text-stone-500 hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-900/30 rounded-full transition-colors"
             title="Fullscreen"
           >
             <Maximize2 size={20} />

@@ -15,8 +15,8 @@ export function CategoryFilter({ categories, selectedCategory, onSelect }: Categ
         className={cn(
           "flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border",
           selectedCategory === "All"
-            ? "bg-stone-800 text-white border-stone-800 shadow-sm"
-            : "bg-white text-stone-600 border-stone-200 hover:border-stone-300 hover:bg-stone-50"
+            ? "bg-stone-800 dark:bg-stone-200 text-white dark:text-stone-900 border-stone-800 dark:border-stone-200 shadow-sm"
+            : "bg-white dark:bg-stone-900 text-stone-600 dark:text-stone-400 border-stone-200 dark:border-stone-800 hover:border-stone-300 dark:hover:border-stone-700 hover:bg-stone-50 dark:hover:bg-stone-800"
         )}
       >
         All Games
@@ -29,8 +29,8 @@ export function CategoryFilter({ categories, selectedCategory, onSelect }: Categ
           className={cn(
             "flex-shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors border",
             selectedCategory === category
-              ? "bg-emerald-700 text-white border-emerald-700 shadow-sm"
-              : "bg-white text-stone-600 border-stone-200 hover:border-stone-300 hover:bg-stone-50"
+              ? "bg-emerald-700 dark:bg-emerald-600 text-white border-emerald-700 dark:border-emerald-600 shadow-sm"
+              : "bg-white dark:bg-stone-900 text-stone-600 dark:text-stone-400 border-stone-200 dark:border-stone-800 hover:border-stone-300 dark:hover:border-stone-700 hover:bg-stone-50 dark:hover:bg-stone-800"
           )}
         >
           {category}

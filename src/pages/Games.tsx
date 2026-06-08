@@ -5,6 +5,7 @@ import { Category } from "../types";
 import { useFavorites } from "../hooks/useFavorites";
 import { GameCard } from "../components/ui/GameCard";
 import { CategoryFilter } from "../components/ui/CategoryFilter";
+import { SEO } from "../components/ui/SEO";
 
 export function Games() {
   const [selectedCategory, setSelectedCategory] = useState<Category | "All">("All");
@@ -18,9 +19,10 @@ export function Games() {
 
   return (
     <div className="space-y-8">
-      <div className="bg-white rounded-3xl p-8 sm:p-12 border border-stone-200 text-center shadow-sm">
-        <h1 className="text-3xl sm:text-4xl font-bold text-stone-800 mb-4 tracking-tight">Game Library</h1>
-        <p className="text-stone-500 text-lg max-w-2xl mx-auto leading-relaxed">
+      <SEO title="Game Library" description="Browse our collection of farm-themed micro-games. Pick one, play for a few minutes, and reset." />
+      <div className="bg-white dark:bg-stone-900 rounded-3xl p-8 sm:p-12 border border-stone-200 dark:border-stone-800 text-center shadow-sm transition-colors">
+        <h1 className="text-3xl sm:text-4xl font-bold text-stone-800 dark:text-stone-100 mb-4 tracking-tight">Game Library</h1>
+        <p className="text-stone-500 dark:text-stone-400 text-lg max-w-2xl mx-auto leading-relaxed">
           Browse our collection of micro-games. Pick one, play for a few minutes, and get back to your day refreshed.
         </p>
       </div>
@@ -46,10 +48,10 @@ export function Games() {
         </div>
 
         {filteredGames.length === 0 && (
-          <div className="text-center py-16 bg-white rounded-3xl border border-stone-200">
-            <Sparkles className="mx-auto text-stone-300 mb-3" size={48} />
-            <h3 className="text-lg font-medium text-stone-900 mb-1">No games found</h3>
-            <p className="text-stone-500">We couldn't find any games matching this category.</p>
+          <div className="text-center py-16 bg-white dark:bg-stone-900 rounded-3xl border border-stone-200 dark:border-stone-800 transition-colors">
+            <Sparkles className="mx-auto text-stone-300 dark:text-stone-700 mb-3" size={48} />
+            <h3 className="text-lg font-medium text-stone-900 dark:text-stone-100 mb-1">No games found</h3>
+            <p className="text-stone-500 dark:text-stone-400">We couldn't find any games matching this category.</p>
           </div>
         )}
       </div>

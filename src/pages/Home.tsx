@@ -6,6 +6,7 @@ import { Category } from "../types";
 import { useFavorites } from "../hooks/useFavorites";
 import { GameCard } from "../components/ui/GameCard";
 import { CategoryFilter } from "../components/ui/CategoryFilter";
+import { SEO } from "../components/ui/SEO";
 
 export function Home() {
   const [selectedCategory, setSelectedCategory] = useState<Category | "All">("All");
@@ -27,16 +28,17 @@ export function Home() {
 
   return (
     <div className="space-y-12">
+      <SEO />
       {/* Hero Section */}
-      <section className="bg-emerald-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
+      <section className="bg-emerald-900 dark:bg-emerald-950 rounded-3xl p-8 sm:p-12 text-white shadow-xl relative overflow-hidden">
         <div className="absolute top-0 right-0 -m-16 opacity-10 pointer-events-none">
           <Sparkles size={300} />
         </div>
         <div className="relative z-10 max-w-2xl">
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 text-emerald-50">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-4 text-emerald-50 dark:text-emerald-100">
             Take a quick break.
           </h1>
-          <p className="text-lg sm:text-xl text-emerald-200 mb-8 max-w-xl leading-relaxed">
+          <p className="text-lg sm:text-xl text-emerald-200 dark:text-emerald-300/80 mb-8 max-w-xl leading-relaxed">
             Short, farm-themed micro-games to reset your mind. Most games take under 3 minutes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
@@ -59,8 +61,8 @@ export function Home() {
 
       {/* Featured Game */}
       <section>
-        <h2 className="text-2xl font-bold text-stone-800 mb-6 flex items-center">
-          <Sparkles className="mr-2 text-emerald-600" size={24} />
+        <h2 className="text-2xl font-bold text-stone-800 dark:text-stone-100 mb-6 flex items-center">
+          <Sparkles className="mr-2 text-emerald-600 dark:text-emerald-500" size={24} />
           Daily Feature
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -76,8 +78,8 @@ export function Home() {
       {/* Game Library Preview */}
       <section>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-          <h2 className="text-2xl font-bold text-stone-800">More Games</h2>
-          <Link to="/games" className="text-sm font-semibold text-emerald-600 hover:text-emerald-700">
+          <h2 className="text-2xl font-bold text-stone-800 dark:text-stone-100">More Games</h2>
+          <Link to="/games" className="text-sm font-semibold text-emerald-600 dark:text-emerald-500 hover:text-emerald-700 dark:hover:text-emerald-400">
             View all &rarr;
           </Link>
         </div>
@@ -102,8 +104,8 @@ export function Home() {
         </div>
         
         {filteredGames.length === 0 && (
-          <div className="text-center py-12 bg-white rounded-2xl border border-stone-200">
-            <p className="text-stone-500">No games found in this category.</p>
+          <div className="text-center py-12 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-800">
+            <p className="text-stone-500 dark:text-stone-400">No games found in this category.</p>
           </div>
         )}
       </section>
