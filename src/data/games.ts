@@ -1,0 +1,60 @@
+import { Game } from "../types";
+
+export const GAMES: Game[] = [
+  {
+    id: "match-equipment",
+    title: "Match the Equipment",
+    description: "Match farm tools and machinery to their correct names or shadows.",
+    playTimeEstimate: "2 mins",
+    category: "Matching",
+    iconName: "Tractor",
+    route: "/games/match-equipment",
+    featured: true,
+  },
+  {
+    id: "sort-supplies",
+    title: "Sort the Supplies",
+    description: "Quickly sort barn supplies into their proper storage bins.",
+    playTimeEstimate: "1 min",
+    category: "Sorting",
+    iconName: "Boxes",
+    route: "/games/sort-supplies",
+  },
+  {
+    id: "crop-memory",
+    title: "Crop Memory Grid",
+    description: "Flip cards to find matching pairs of common crops.",
+    playTimeEstimate: "3 mins",
+    category: "Memory",
+    iconName: "Leaf",
+    route: "/games/crop-memory",
+  },
+  {
+    id: "weather-choice",
+    title: "Quick Weather Choice",
+    description: "Make the right operational call based on rapid-fire weather forecasts.",
+    playTimeEstimate: "1.5 mins",
+    category: "Timing",
+    iconName: "CloudSun",
+    route: "/games/weather-choice",
+  },
+  {
+    id: "animal-id",
+    title: "Animal ID Flash Cards",
+    description: "Identify breeds and common farm animals against a timer.",
+    playTimeEstimate: "2 mins",
+    category: "Educational",
+    iconName: "PawPrint",
+    route: "/games/animal-id",
+  },
+  {
+    id: "harvest-trivia",
+    title: "Harvest Timing Trivia",
+    description: "Answer quick questions about when to harvest different crops.",
+    playTimeEstimate: "2.5 mins",
+    category: "Trivia",
+    iconName: "HelpCircle",
+    route: "/games/harvest-trivia",
+    featured: true,
+  }
+];
