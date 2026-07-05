@@ -5,6 +5,5 @@ declare global {
     gtag: (...args: any[]) => void;
     dataLayer: any[];
     _scrolled50?: boolean;
-    adsbygoogle?: any[];
   }
 }

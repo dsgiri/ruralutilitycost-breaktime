@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#022c22"/>
+  
+  <!-- Coffee Cup Base -->
+  <path d="M144 208V304C144 365.8 194.2 416 256 416C317.8 416 368 365.8 368 304V208H144Z" fill="#10B981" stroke="#059669" stroke-width="12" stroke-linejoin="round"/>
+  
+  <!-- Handle -->
+  <path d="M368 256H400C426.5 256 448 277.5 448 304C448 330.5 426.5 352 400 352H360" fill="none" stroke="#10B981" stroke-width="32" stroke-linecap="round"/>
+  
+  <!-- Wheat Steam Left -->
+  <path d="M208 176C208 128 240 112 240 80" fill="none" stroke="#FBBF24" stroke-width="24" stroke-linecap="round"/>
+  <path d="M208 144L184 136" fill="none" stroke="#FBBF24" stroke-width="16" stroke-linecap="round"/>
+  <path d="M224 112L200 104" fill="none" stroke="#FBBF24" stroke-width="16" stroke-linecap="round"/>
+  
+  <!-- Wheat Steam Right -->
+  <path d="M304 176C304 128 272 112 272 80" fill="none" stroke="#FBBF24" stroke-width="24" stroke-linecap="round"/>
+  <path d="M304 144L328 136" fill="none" stroke="#FBBF24" stroke-width="16" stroke-linecap="round"/>
+  <path d="M288 112L312 104" fill="none" stroke="#FBBF24" stroke-width="16" stroke-linecap="round"/>
+
+  <!-- Sun in center of cup -->
+  <circle cx="256" cy="304" r="32" fill="#FBBF24" />
+</svg>

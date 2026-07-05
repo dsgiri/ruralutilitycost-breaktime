@@ -27,7 +27,7 @@ export function Navbar() {
               </div>
               <div>
                 <span className="font-bold text-lg text-emerald-900 dark:text-emerald-100 tracking-tight leading-none block">BreakTime</span>
-                <span className="text-[10px] text-stone-500 dark:text-stone-400 uppercase tracking-wider font-medium">Rural Utility Cost</span>
+                <span className="text-[10px] text-stone-500 dark:text-stone-400 uppercase tracking-wider font-medium">RuralOpsTools</span>
               </div>
             </Link>
             

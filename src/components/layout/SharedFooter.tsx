@@ -18,7 +18,7 @@ export function SharedFooter() {
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-sm text-stone-500 dark:text-stone-400 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors">
-                  Rural Utility Cost Home
+                  RuralOpsTools Home
                 </a>
               </li>
               <li>
@@ -50,10 +50,10 @@ export function SharedFooter() {
         </div>
         <div className="mt-8 border-t border-stone-200 dark:border-stone-800 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-stone-400 dark:text-stone-500">
-            &copy; {new Date().getFullYear()} Rural Utility Cost. All rights reserved.
+            &copy; {new Date().getFullYear()} RuralOpsTools. All rights reserved.
           </p>
           <p className="text-xs text-stone-400 dark:text-stone-500 mt-2 md:mt-0">
-            Part of the ruralutilitycost.com ecosystem.
+            Part of the ruralopstools.com ecosystem.
           </p>
         </div>
       </div>

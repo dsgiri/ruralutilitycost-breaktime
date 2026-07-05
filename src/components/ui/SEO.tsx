@@ -10,10 +10,10 @@ interface SEOProps {
 
 export function SEO({ 
   title = "BreakTime", 
-  description = "A lightweight break-time hub with short, farm-related micro-games, quick puzzles, and mini interactive activities for rural users from Rural Utility Cost.",
+  description = "A lightweight break-time hub with short, farm-related micro-games, quick puzzles, and mini interactive activities for rural users from RuralOpsTools.",
   type = "website",
-  url = "https://break.ruralutilitycost.com",
-  image = "https://break.ruralutilitycost.com/og-image.jpg"
+  url = "https://break.ruralopstools.com",
+  image = "https://break.ruralopstools.com/og-image.jpg"
 }: SEOProps) {
   const pageTitle = title === "BreakTime" ? "BreakTime - Optimized for search" : `${title} - Optimized for search`;
   const canonicalUrl = url.replace(/\/$/, "");
@@ -31,7 +31,7 @@ export function SEO({
       <title>{pageTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content="rural, farm, micro-games, puzzle, breaktime, agriculture, utility cost" />
-      <meta name="author" content="Rural Utility Cost" />
+      <meta name="author" content="RuralOpsTools" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={canonicalUrl} />
 

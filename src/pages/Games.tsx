@@ -6,7 +6,6 @@ import { useFavorites } from "../hooks/useFavorites";
 import { GameCard } from "../components/ui/GameCard";
 import { CategoryFilter } from "../components/ui/CategoryFilter";
 import { SEO } from "../components/ui/SEO";
-import { AdContainer } from "../components/ui/AdContainer";
 
 export function Games() {
   const [selectedCategory, setSelectedCategory] = useState<Category | "All">("All");
@@ -36,8 +35,6 @@ export function Games() {
             onSelect={setSelectedCategory} 
           />
         </div>
-
-        <AdContainer slotId="games-top-ad-placeholder" type="in-content" />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredGames.map(game => (

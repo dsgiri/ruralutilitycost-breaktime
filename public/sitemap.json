@@ -1,13 +1,13 @@
 {
   "urls": [
-    { "loc": "https://break.ruralutilitycost.com/", "changefreq": "daily", "priority": 1.0 },
-    { "loc": "https://break.ruralutilitycost.com/games", "changefreq": "weekly", "priority": 0.8 },
-    { "loc": "https://break.ruralutilitycost.com/favorites", "changefreq": "monthly", "priority": 0.6 },
-    { "loc": "https://break.ruralutilitycost.com/quick-play", "changefreq": "monthly", "priority": 0.5 },
-    { "loc": "https://break.ruralutilitycost.com/legal", "changefreq": "yearly", "priority": 0.3 },
-    { "loc": "https://break.ruralutilitycost.com/privacy", "changefreq": "yearly", "priority": 0.3 },
-    { "loc": "https://break.ruralutilitycost.com/terms", "changefreq": "yearly", "priority": 0.3 },
-    { "loc": "https://break.ruralutilitycost.com/disclaimer", "changefreq": "yearly", "priority": 0.3 },
-    { "loc": "https://break.ruralutilitycost.com/contact", "changefreq": "yearly", "priority": 0.4 }
+    { "loc": "https://break.ruralopstools.com/", "changefreq": "daily", "priority": 1.0 },
+    { "loc": "https://break.ruralopstools.com/games", "changefreq": "weekly", "priority": 0.8 },
+    { "loc": "https://break.ruralopstools.com/favorites", "changefreq": "monthly", "priority": 0.6 },
+    { "loc": "https://break.ruralopstools.com/quick-play", "changefreq": "monthly", "priority": 0.5 },
+    { "loc": "https://break.ruralopstools.com/legal", "changefreq": "yearly", "priority": 0.3 },
+    { "loc": "https://break.ruralopstools.com/privacy", "changefreq": "yearly", "priority": 0.3 },
+    { "loc": "https://break.ruralopstools.com/terms", "changefreq": "yearly", "priority": 0.3 },
+    { "loc": "https://break.ruralopstools.com/disclaimer", "changefreq": "yearly", "priority": 0.3 },
+    { "loc": "https://break.ruralopstools.com/contact", "changefreq": "yearly", "priority": 0.4 }
   ]
 }
