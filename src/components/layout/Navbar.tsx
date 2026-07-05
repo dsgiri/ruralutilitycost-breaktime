@@ -10,7 +10,6 @@ export function Navbar() {
   const location = useLocation();
 
   const navItems = [
-    { name: "Home", path: "/", icon: Coffee },
     { name: "Games", path: "/games", icon: Gamepad2 },
     { name: "Favorites", path: "/favorites", icon: Heart },
     { name: "Quick Play", path: "/quick-play", icon: Play },
